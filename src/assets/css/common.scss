@@ -7,7 +7,7 @@ header, footer, section, article, aside, nav, hgroup, address, figure, menu {
   display: block; 
 }
 html, body {
-  font-family: "PingFang SC, PingFangSC-Regular", "Microsoft YaHei", sans-serif, "Helvetica Neue", Helvetica, Arial, "黑体";
+  font-family: "Microsoft YaHei", sans-serif, "Helvetica Neue", Helvetica, Arial, "黑体";
   font-size: 14px;
   color: #262626;
   background: #f5f5f5;
@@ -30,7 +30,7 @@ img {
   font-size: 0;
 }
 input, button, textarea, select { 
-  font-family: "PingFang SC, PingFangSC-Regular", "Microsoft YaHei", sans-serif, "Helvetica Neue", Helvetica, Arial, "黑体";
+  font-family: "Microsoft YaHei", sans-serif, "Helvetica Neue", Helvetica, Arial, "黑体";
   font-size: 14px;
   color: #262626;
   border: 0;
@@ -63,3 +63,44 @@ a:focus, a:active, a:hover {
 ::-webkit-scrollbar-track-piece { background-color: #f5f5f5; border-radius: 6px; }
 ::-webkit-scrollbar-thumb { background-color: #cccccc; border-radius: 6px; }
 ::-webkit-scrollbar-corner { background-color: #f5f5f5; }
+
+.flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex-1 {
+  flex: 1;
+}
+
+/* 整体布局 */
+.wrap {
+  justify-content: space-between;
+  .wrap-left, .wrap-right {
+    width: 300px;
+    height: 100vh;
+    background: #fff;
+    overflow: hidden;
+    padding-top: 64px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 10px #ccc;
+  }
+  .wrap-center {
+    width: 375px;
+    height: 100vh;
+    padding-top: 64px;
+    box-sizing: border-box;
+    .title {
+      width: 100%;
+      line-height: 60px;
+      text-align: center;
+    }
+    .preview {
+      width: 100%;
+      height: 560px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 5px 10px #ccc;
+    }
+  }
+}

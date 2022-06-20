@@ -30,7 +30,7 @@ export default defineConfig((command) => {
     // 打包设置
     build: {
       brotliSize: false,
-      // 消除打包大小超过500kb警告
+      // 消除打包大小超过2000kb警告
       chunkSizeWarningLimit: 2000,
       minify: 'terser', // 混淆器 生产代码混淆
       // 在生产环境移除console.log
